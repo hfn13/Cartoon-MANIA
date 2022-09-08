@@ -69,7 +69,7 @@ if selections == 'CM22 Studios':
         rf = load(filename = 'CARTOON-IMDB_Prediction')
         prediction = rf.predict(df)
         st.markdown('Your Prediction: ' )
-        st.write(str(np.round(prediction)))
+        st.write(str(np.round(prediction, 1)))
         def review(prediction):
              if prediction >= 1 and prediction < 2:
                 review='Ridiculous'
