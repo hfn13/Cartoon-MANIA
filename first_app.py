@@ -32,7 +32,7 @@ if selections == 'Find your show!':
 # Predict rating after providing number of seasons and three genres
         
 if selections == 'CM22 Studios':
-    st.header('Pitch your own movie!')
+    st.header('Pitch your own show!')
     st.subheader('Get your review instantly!')
     st.markdown('Welcome to CM22 Studios, where we are passionate about talent!')
     st.write('Show us what you got!!')
