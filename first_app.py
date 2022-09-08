@@ -23,10 +23,10 @@ if selections == 'About':
 if selections == 'Find your show!':
     name=st.text_input('Cartoon', 'Yogi Bear') 
     
-    st.subheader(name)
+    st.subheader(name.title())
     
-    if name in cartoon_df.cartoon_names.unique():
-        st.dataframe(cartoon_df[cartoon_df['cartoon_names'].str.contains(name)])
+    
+    st.dataframe(cartoon_df[(cartoon_df['cartoon_names'].str.lower()).str.contains(name.lower())])
         
 # Predict rating after providing number of seasons and three genres
         
