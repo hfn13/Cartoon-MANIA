@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
+import numpy as np
 
 #Download dataframe
 cartoon_df = pd.read_csv('cartoon_fys.csv')
@@ -68,7 +69,7 @@ if selections == 'CM22 Studios':
         rf = load(filename = 'CARTOON-IMDB_Prediction')
         prediction = rf.predict(df)
         st.markdown('Your Prediction: ' )
-        st.write(str(prediction))
+        st.write(str(np.round(prediction)))
         def review(prediction):
              if prediction >= 1 and prediction < 2:
                 review='Ridiculous'
