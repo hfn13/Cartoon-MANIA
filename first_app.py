@@ -24,7 +24,7 @@ if selections == 'About':
 if selections == 'Find your show!':
     st.header('Search for a show!!')
     st.subheader('Find details to your favorite show!')
-    name=st.text_input('Cartoon', 'Yogi Bear') 
+    name=st.text_input('Cartoon', '') 
     
     st.subheader(name.title())
     
