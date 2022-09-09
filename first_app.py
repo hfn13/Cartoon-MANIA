@@ -22,6 +22,8 @@ if selections == 'About':
 # Search for a show and receive details such as premier year, genres and rating.
 
 if selections == 'Find your show!':
+    st.header('Search for a show!!')
+    st.subheader('Find details to your favorite show!')
     name=st.text_input('Cartoon', 'Yogi Bear') 
     
     st.subheader(name.title())
